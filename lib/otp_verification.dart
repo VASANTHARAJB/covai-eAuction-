@@ -307,8 +307,9 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
           decoration: const InputDecoration(border: InputBorder.none, counterText: ''),
           onChanged: (value) {
             if (value.isNotEmpty) {
-              if (index < 5) FocusScope.of(context).requestFocus(_focusNodes[index + 1]);
-              else { FocusScope.of(context).unfocus(); _verifyOtp(); }
+              if (index < 5) {
+                FocusScope.of(context).requestFocus(_focusNodes[index + 1]);
+              } else { FocusScope.of(context).unfocus(); _verifyOtp(); }
             } else if (value.isEmpty && index > 0) {
               FocusScope.of(context).requestFocus(_focusNodes[index - 1]);
             }

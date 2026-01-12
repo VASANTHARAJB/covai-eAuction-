@@ -36,7 +36,7 @@ class AuctionItem {
   factory AuctionItem.fromJson(Map<String, dynamic> json) {
     String img = (json['image'] ?? '').toString().trim();
     String imageUrl = img.isNotEmpty
-        ? "https://neoerainfotech.com/Covai/" + img.replaceAll('\\', '/')
+        ? "https://neoerainfotech.com/Covai/${img.replaceAll('\\', '/')}"
         : "https://neoerainfotech.com/Covai/uploads/placeholder.jpeg";
 
     return AuctionItem(

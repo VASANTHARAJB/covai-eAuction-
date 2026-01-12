@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:intl/intl.dart';
-import 'auction_item.dart';
 import 'profile_screen.dart';
 import 'property_detail_screen.dart';
 import 'auctions_screen.dart';
